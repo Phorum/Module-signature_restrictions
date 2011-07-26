@@ -1,11 +1,8 @@
-Module  : Signature Restrictions
-Version : 1.0.2
-Author  : Maurice Makaay
+Module  : @TITLE@
+Version : @VERSION@
+Author  : @AUTHOR@
 
-This module implements configurable features for enforcing signature
-restrictions. The module will check the signature when it is stored
-in the control center by the user and show an error to the user if
-the new signature does not meet the restrictions.
+@DESCRIPTION@
 
 Available restrictions are:
 
@@ -22,13 +19,13 @@ Install:
 
 - Unpack the archive;
 
-- Move the directory "signature_restrictions" to the directory "mods"
+- Move the directory "@MODULE_ID@" to the directory "mods"
   within your Phorum installation;
 
 - Login as administrator in Phorum's administrative interface and
   go to the "Modules" section;
 
-- Enable the module "Signature Restrictions".
+- Enable the module "@TITLE@".
 
 - Edit the settings for the module to setup the restrictions that
   you want to use for your Phorum installation.
@@ -38,7 +35,7 @@ Customization:
 --------------
 
 You can translate the error messages that this module produces by writing a
-language file "mods/signature_restrictions/lang/<yourlang>.php".
+language file "mods/@MODULE_ID@/lang/<yourlang>.php".
 In this filename <yourlang> has to be the same name as the main language
 file that you use (i.e. "include/lang/<yourlang>.php"). If you write a
 translation for this module, then please post it in the module's thread
